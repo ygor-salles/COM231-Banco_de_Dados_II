@@ -5,7 +5,7 @@ class Config():
         self.dadosConexao = dadosConexao
 
     def setParametros(self):
-        self.dadosConexao = "host='localhost' dbname='ConexaoBD_1 user='postgres' password=postgre'"
+        self.dadosConexao = "host='localhost' dbname='ConexaoBD_1' user='postgres' password='postgre'"
         return self
     
     def alteraBD(self, stringSQL, valores):
@@ -33,14 +33,14 @@ class Config():
         finally:
             if conn is not None:
                 conn.close()
-            return 'Registro alterado com sucesso'
+            return 'Sucesso'
     
     def consultaBD(self, stringSQL, valores):
         # iniciar a inserção do registro
         conn = None
         try:
             # abrir a conexão
-            conexao = psycopg2.connect(config.setParametros(self).dadosconexao)
+            conexao = psycopg2.connect(Config.setParametros(self).dadosConexao)
 
             # abrir a sessão - a transação começa aqui
             sessao = conexao.cursor()
@@ -92,6 +92,6 @@ class Config():
         finally:
             if conn is not None:
                 conn.close()
-            return 'Venda cadastrada com sucesso'
+            return 'Sucesso'
     
     

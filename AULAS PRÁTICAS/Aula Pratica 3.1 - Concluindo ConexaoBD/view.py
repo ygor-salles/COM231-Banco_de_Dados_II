@@ -1,13 +1,14 @@
 from decimal import *
 from model import OrderDetails
 from datetime import datetime
+import os
 
 class View():
     def inicio(self):
         return self.menu()
     
     def menu(self):
-        print('**********MENU**********')
+        print('\n**********MENU**********\n')
         print('1 - Cadastrar um produto')
         print('2 - Deletar um produto')
         print('3 - Consultar um produto')
@@ -17,9 +18,12 @@ class View():
         print('7 - Alterar a quantidade de produtos vendidos')
         print('8 - Sair')
         opcao = int(input('Digite a opção desejada: '))
+        os.system('pause')
+        os.system('cls') or None
         return opcao
     
     def coletaDadosProduto(self):
+        print('**** CADASTRO DE PRODUTO ****\n')
         productid = input('Digite o identificador do produto: ') 
         productname = input('Digite o nome do produto: ')
         supplierid = input('Digite o identificador do fornecedor: ')
@@ -35,8 +39,8 @@ class View():
         return valores
 
     def coletaDadosProdutoUpdate(self, id):
-        atributos = {1: 'productname', 2: 'supplierid', 3: 'categoryid', 4: 'quantityperunit', 5: 'unitprice', 
-            6: 'unitsinstock', 7: 'unitsonorder', 8: 'reorderlevel', 9: 'discontinued'}
+        print('**** DIGITE A OPÇÃO PARA ALTERAR O CAMPO DESEJADO DO PRODUTO ****\n')
+        atributos = {1: 'productname', 2: 'supplierid', 3: 'categoryid', 4: 'quantityperunit', 5: 'unitprice', 6: 'unitsinstock', 7: 'unitsonorder', 8: 'reorderlevel', 9: 'discontinued'}
         print('Digite')
         print('1 para o nome do produto')
         print('2 para o identificador do fornecedor')
@@ -49,9 +53,9 @@ class View():
         print('9 para descontinuado')
         campo = int(input())
         valor = input('Digite o novo valor para o atributo: ')
-        if campo==2 or campo==3 or campo==6 or campo==8:
+        if campo==2 or campo==3 or campo==6 or campo==7 or campo==8:
             int(valor)
-        elif campo==4:
+        elif campo==5:
             Decimal(valor)
         return (id, atributos[campo], valor)
     
@@ -64,6 +68,7 @@ class View():
         return pedidoId
     
     def imprimeProduto(self, prod):
+        print('**** CONSULTA DE PRODUTO ****\n')
         if prod is not None:
             print('ID: ',prod.id)
             print('Nome: ',prod.nome)
@@ -93,6 +98,7 @@ class View():
             print('A consulta não retornou dados')                
 
     def coletaDadosPedido(self):
+        print('**** CADASTRO DE PEDIDO ****\n')
         orderid = input('Digite o identificador do pedido: ')
         customerid = input('Digite o identificador do cliente: ')
         employeeid = input('Digite o identificador do funcionario: ')
@@ -108,6 +114,8 @@ class View():
         shipcountry = input('Digite o país: ')
         shipperid = input('Digite o id do endereço de envio: ')
         year, month, day = map(int, orderdate.split('-'))
+        orderdate = datetime(year, month, day)
+        year, month, day = map(int, requireddate.split('-'))
         requireddate = datetime(year, month, day)
         year, month, day = map(int, shippeddate.split('-'))
         shippeddate = datetime(year, month, day)
@@ -123,19 +131,23 @@ class View():
             productid = input('Digigte o identificador do pedido: ')
             unitprice = input('Digite o valor do produto: ')
             quantity = input('Digite a quantidade comprada: ')
+            discount = input('digite o valor de desconto: ')
             produtoPedido = OrderDetails(int(orderid), int(productid), Decimal(unitprice), int(quantity), Decimal(discount))
             listaProdutos.append(produtoPedido)
             i = int(input('Deseja continuar cadastrar produtos para esse pedido? (-1 para sair, 1 para continuar)'))
         return listaProdutos
 
     def coletaDadosPedidoUpdate(self):
+        print('**** ATUALIZAÇÃO DO PEDIDO ****\n')
         pedidoid = int(input('Digite o código do pedido: '))
         productid = int(input('Digite o código do pedido: '))
         quantidade = int(input('Digite o código do pedido: '))
         return [pedidoid, productid, quantidade]
 
     def imprimeStatus(self, status):
-        if 'sucesso' in s   tatus:
+        if 'Sucesso' == status:
             print('Comando executado no banco de dados com sucesso')
         else:
             print(status)
+
+view = View()

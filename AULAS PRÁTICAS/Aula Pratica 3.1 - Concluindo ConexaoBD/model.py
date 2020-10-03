@@ -65,7 +65,7 @@ class PedidoM():
     def cadastraVenda(dadosPedido, listaProdutos):
         string_SQL_pedido = """INSERT INTO northwind.orders(orderid, customerid, employeeid, orderdate, requireddate, shippeddate, freight, \
         shipname, shipaddress, shipcity, shipregion, shippostalcode, shipcountry, shipperid) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"""
-        string_SQL_produto = """INSERT INTO northwind.order_details(orderid, productid, unitprice, quantity, discount) VALUES (%s, %s, %s, %s, %s);"""
+        string_SQL_produto = """INSERT INTO northwind.order_details(orderid, productid, unitprice, quantity, discount) VALUES (%s, %s, %s, %s, %s)"""
         status = Config.cadastraVendaBD(Config, string_SQL_pedido, string_SQL_produto, dadosPedido, listaProdutos)
         return status
     
@@ -78,8 +78,14 @@ class PedidoM():
 #Isso foi feito em outro arquivo no exemplo da professora
 class OrderDetails():
     def __init__(self, orderid, productid, unitprice, quantity, discount):
-        self.orderid = orderid
-        self.productid = productid
-        self.unitprice = unitprice
-        self.quantity = quantity
-        self.discount = discount
+        self.idPedido = orderid
+        self.idProduto = productid
+        self.preco = unitprice
+        self.quantidade = quantity
+        self.desconto = discount
+
+    def alteraVenda(dadospedido):
+        string_SQL = """UPDATE northwind.order_details SET quantity = %s WHERE orderid = %s AND productid = %s"""
+        parametros = (dadospedido[2], dadospedido[0], dadospedido[1])
+        status = Config.alteraBD(Config, string_SQL, parametros)
+        return status

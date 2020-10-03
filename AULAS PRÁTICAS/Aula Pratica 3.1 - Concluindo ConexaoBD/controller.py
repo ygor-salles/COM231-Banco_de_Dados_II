@@ -1,6 +1,7 @@
 from view import View
 from model import ProdutoM
 from model import PedidoM
+import os
 
 class Controle:
     def __init__(self):
@@ -44,6 +45,8 @@ class Controle:
                 l = self.view.coletaDadosPedidoUpdate()
                 status = PedidoM.alteraVenda(l)
                 self.view.imprimeStatus(status)
+            os.system('pause')
+            os.system('cls') or None
             opcao = self.view.menu()
 
 if __name__ == "__main__":

@@ -29,7 +29,7 @@ class manipulaBanco():
             sessao.close()
             return 1
         except:
-            return -1;
+            return -1
 
     def consultaProduto(id):
         try:

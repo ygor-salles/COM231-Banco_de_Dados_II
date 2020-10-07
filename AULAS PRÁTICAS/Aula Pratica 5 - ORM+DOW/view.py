@@ -3,6 +3,7 @@ from mapeamento import Product
 from mapeamento import Order
 from mapeamento import OrderDetail
 from datetime import datetime
+import os
 
 class View():
     def inicio(self):
@@ -18,6 +19,8 @@ class View():
         print("6. Relatório resumido de uma venda")
         print("7. Sair")
         opcao = int(input("Digite a opcao desejada : "))
+        os.system('pause')
+        os.system('cls') or None
         return opcao
 
 

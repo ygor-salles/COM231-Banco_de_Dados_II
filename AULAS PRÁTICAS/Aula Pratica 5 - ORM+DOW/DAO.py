@@ -8,7 +8,7 @@ from sqlalchemy.orm import sessionmaker
 
 class DAOCrud():
     def getSession():
-        engine = create_engine("postgresql+psycopg2://postgres:root@localhost:5432/Northwind", echo=True)
+        engine = create_engine("postgresql+psycopg2://postgres:postgre@localhost:5432/Northwind", echo=True)
         Session = sessionmaker(bind=engine)
         session = Session()
         return session

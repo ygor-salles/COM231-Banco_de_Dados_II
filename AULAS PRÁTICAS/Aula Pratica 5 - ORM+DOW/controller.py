@@ -4,7 +4,7 @@ from mapeamento import Order
 from mapeamento import OrderDetail
 from model import manipulaBanco
 from datetime import datetime
-
+import os
 
 class Controle:
     def inicio(self):
@@ -41,6 +41,8 @@ class Controle:
                 id = self.view.recebecodproduto()
                 result = manipulaBanco.relatorio(id)
                 self.view.imprimeRelatorio(result)
+            os.system('pause')
+            os.system('cls') or None
             opcao = self.view.menu()
 
     def __init__(self):

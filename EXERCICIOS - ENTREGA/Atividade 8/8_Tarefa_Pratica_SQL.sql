@@ -1,6 +1,5 @@
-﻿-- Assunto: Banco de Dados Objeto-Relacional
--- Aluno: Rodrigo de Andrade Porto - Matrícula: 2019000500
--- Aluno: João Pedro Lopes Dias Ribeiro - Matrícula: 2017002176
+﻿--Fábio Piovani Viviani 2017006774
+--Ygor Salles Aniceto Carvalho 2017014382
 
 -- A)
 CREATE TYPE t_endereco AS(

@@ -144,7 +144,7 @@ $BODY$
 		carga_maxima ALIAS FOR $6;
 		numero_eixos ALIAS FOR $7;
 	BEGIN
-		INSERT INTO passeio VALUES (num_renavam, valor, marca, ano, num_financiamento, carga_maxima, numero_eixos);
+		INSERT INTO carga VALUES (num_renavam, valor, marca, ano, num_financiamento, carga_maxima, numero_eixos);
 		RAISE NOTICE 'Financiamento para veículo de carga realizado';
 		RETURN true;
 	END;

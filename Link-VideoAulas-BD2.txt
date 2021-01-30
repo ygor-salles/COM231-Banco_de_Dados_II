@@ -1,0 +1,34 @@
+Video-Aulas
+
+01 Revisão - https://drive.google.com/open?id=1A1vED_B27RgR2O0aq2es-Rt2iwuDTTvj&authuser=1
+02 Segurança - https://drive.google.com/open?id=1rkS6PFFcPVAnq-0D5viAFgHpr2DSn-30&authuser=1
+03 Segurança - https://drive.google.com/open?id=1nIb_Hg70tzjj5ZxWSCtarsoO01dFJXzN&authuser=1
+03 Segurança Prática - https://drive.google.com/file/d/1rkS6PFFcPVAnq-0D5viAFgHpr2DSn-30/view
+04 Controle de Usuário - https://drive.google.com/open?id=1WMOngmX7u0rVnNEVMR9IAkcZL4Wou-WV&authuser=1
+04 Indexação - https://drive.google.com/open?id=1qd3epQk6iJUkm5MrA4ION9Qt6csul7Iu&authuser=1
+05 Indexação - https://drive.google.com/open?id=1Mn82VDvzt5m7b2rg0PzRQWvSKM8SqwAR&authuser=1
+06 Indexação - https://drive.google.com/open?id=1KuEgtOquBxJtG7zby3DjwURM2jDzhLdR&authuser=1
+08 Indexação - https://drive.google.com/open?id=1lVh0RwSuyNjD7jl0SVmFkdBO5hh1G48t&authuser=1
+09 Transações - https://drive.google.com/open?id=165rQ674TgO3r0HCR19c_tSrcIsQTkegr&authuser=1
+10 Conectividade Driver - https://drive.google.com/open?id=1JMpaQlzcqSoCRMQ66QCc2gh1-eId9sq6&authuser=1
+10 Pratica Conexão 1 - https://drive.google.com/open?id=1zWfJgtwgP1bbLuVVhUq-pAcAt3aFvk3j&authuser=1
+10 Pratica Conexão 2 - https://drive.google.com/open?id=198zGUjshOrtVBczMoRymVRYjQhE60IfP&authuser=1
+10 Pratica Conexão 3 - https://drive.google.com/open?id=1LfhStAMriUb0j7lg54yWb8U_TNVO0qJC&authuser=1
+10 Pratica Conexão 4 - https://drive.google.com/open?id=1i10WUwQXjF_nvdCHNeMyUEiMBRr3kNXp&authuser=1
+11 ORM - https://drive.google.com/open?id=1yd3OG0IlE4DKrYKERBLzYzluJdSlWBMo&authuser=1
+12 Conectividade ORM - https://drive.google.com/open?id=1zkYPWrhWcARJLxDixj1XtnXgbPkSKT7I&authuser=1
+13 Conectividade DAO - https://drive.google.com/open?id=11-BfgyYg_HEjJZNTvUr7vNsF_rZq7m4R&authuser=1
+14 Processamento Transações - https://drive.google.com/open?id=1ayeEKUtfcHfQ9VfjVIXcKpP4njLgIzEl&authuser=1
+15 Recuperação Falhas - https://drive.google.com/open?id=1vrqjPeCv4prgHxtaJ59KBxjplTMmbT4y&authuser=1
+16 Recuperação Log - https://drive.google.com/open?id=19mH5yhKS76bZJu4ClMOsvShTef2dThjA&authuser=1
+17 Recuperação Log - https://drive.google.com/open?id=1-lLZu-boD-OHmbemRyoXE5l1UqG-jhbm&authuser=1
+18 Controle de concorrência - https://drive.google.com/open?id=1P6BnhvZriZs_2gMhnBnIUGAoXyaw5s-W&authuser=1
+19 Controle de concorrência - https://drive.google.com/open?id=1wgeMqzEqiwDhIYzSRfvERHGloUsaOZfE&authuser=1
+21 Banco de Dados Objeto Relacional - https://drive.google.com/open?id=1YLbsa79APmm4UBPcQTTdC5n1Hoq5Rn6M&authuser=1
+23 Big Data - https://drive.google.com/open?id=1kxo3JNVMzNV4fJlucfHMVcziJ15aZr8_&authuser=1
+24 NoSQL - https://drive.google.com/open?id=18XJRW1Lpdq4Ms6pUnNcWFwQFSf9m4I_z&authuser=1
+25 NoSQL - https://drive.google.com/open?id=1VHI6MwZJnZS_Eh04RuessEA_iJ2cgfDq&authuser=1
+26 Introdução ao MongoDB - https://drive.google.com/open?id=1HJJo8oZNrq1IY_3tSTqkyt350AnBkhYp&authuser=1
+26 MongoDB - https://drive.google.com/open?id=1l1fiU5BHW7csiNQR2BbTi4KCu8IVvNVb&authuser=1
+27 MongoDB - https://drive.google.com/open?id=1_StGpGGh6VpS7iTzDfb7KwieAIVRkPGt&authuser=1
+ 
